@@ -7,7 +7,7 @@
 		<title>reveal.js</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/moon.css">
+		<link rel="stylesheet" href="css/theme/white.css">
 		<link rel="stylesheet" href="plugin/accessibility/helper.css">
 
 		<!-- Theme used for syntax highlighting of code -->
@@ -30,12 +30,12 @@
 		<div class="reveal">
 			<div class="slides">
 
-				<section aria-label="Slide 1 - Introduction">
+				<section aria-label="Introduction">
 					<h1>Web Accessibility Task Force</h1>
 					February 14<sup>th</sup>, 2019
 				</section>
 
-				<section aria-label="Slide 2 - Agenda">
+				<section aria-label="Agenda">
 					<h2>Agenda</h2>
 					<ol>
 						<li>Progress</li>
@@ -46,12 +46,53 @@
 					</ol>
 				</section>
 
-				<section aria-label="Slide 3 - Error Progress">
-					
+				<section aria-label="Error Progress">
+					<h2>Progress Over Time</h2>
+					<canvas data-chart="line">
+						<!-- {
+						 "data": {
+						  "labels": [" October"," November"," December"," January"," February"],
+						  "datasets": [
+						   {
+							"data":[398,2483,6557,7066,7062],
+							"label":"Pages","backgroundColor":"rgba(20,220,220,.8)"
+						   },
+						   {
+							"data":[1035,5196,35132,34886,11537],
+							"label":"Errors","backgroundColor":"rgba(220,120,120,.8)"
+						   }
+						  ]
+						 }, 
+						 "options": { "responsive": "true" }
+						}
+						-->
+						</canvas>
 				</section>
 
-				<section aria-label="Slide 4 - Error Chart">
-						
+				<section aria-label="Error Chart">
+					<h2>Remaining Errors</h2>
+					<canvas data-chart="bar">
+						<!-- {
+						 "data": {
+						  "labels": [" Multiple Form Labels", " Alt Text"," Broken Skip Links"," Other"],
+						  "datasets": [
+						   {
+							"data":[0.33,0.27,0.12,0.29],
+							"label":"Errors","backgroundColor":"rgba(220,120,120,.8)"
+						   }
+						  ]
+						 }, 
+						 "options": { "responsive": "true" }
+						}
+						-->
+					</canvas>	
+				</section>
+
+				<section aria-label="Procurement">
+					<h2>Procurement</h2>
+					<p>All ITS Purchases <em>must</em> be accessible</p>
+					<a href="https://smccd-czqfp.formstack.com/workflows/its_purchasing_request">ITS Purchasing Request Formstack Form</a>
+					<a href="https://smccd-czqfp.formstack.com/forms/accessible_it_evaluation">IT Accessibility Checklist</a>
 				</section>
 			</div>
 		</div>
@@ -67,6 +108,8 @@
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/chart/chart.min.js '},
+					{ src: 'plugin/chart/csv2chart.js' },
 					{ src: 'plugin/notes/notes.js', async: true },
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
 				]
