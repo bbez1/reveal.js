@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -7,7 +7,7 @@
 		<title>reveal.js</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/moon.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -20,12 +20,88 @@
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
+
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+
+				<section aria-label="Slide 1 - Introduction">
+					<h1>Web Accessibility Task Force</h1>
+					February 14<sup>th</sup>, 2019
+				</section>
+
+				<section aria-label="Slide 2 - Agenda">
+					<h2>Agenda</h2>
+					<ol>
+						<li>Progress</li>
+						<li>Procurement</li>
+						<li>Accessibility Resources</li>
+						<li>Formstack</li>
+						<li>JAWS Update</li>
+					</ol>
+				</section>
+
+				<section aria-label="Slide 3 - Progress Chart">
+					<!-- Chart.js Setup -->
+					<script src="node_modules/chart.js/dist/Chart.bundle.min.js"></script>
+					<script>
+						var ctx = document.getElementById("myChart");
+						var ctx = document.getElementById("myChart").getContext("2d");
+						var ctx = $("#myChart");
+						var ctx = "myChart";
+					</script>
+					<h2>Remaining Errors</h2>
+					<div class="chart-container" style="margin: 0 auto; position: relative; max-width: 100%;" aria-hidden="true">
+						<canvas style="background: white;" id="myChart">
+							<p>Text Equivalent for Screen Reader Users</p>
+							<ul>
+								<li>Form Labels - 3767 Errors</li>
+								<li>Missing Alt attribute - 1329 Errors</li>
+								<li>Broken Skip Links - 1329 Errors</li>
+								<li>Linked Image Missing alt text - 1251 Errors</li>
+								<li>Other - 3292 Errors</li>
+							</ul>
+						</canvas>
+					</div>
+					<script>
+					var ctx = document.getElementById("myChart");
+					var myChart = new Chart(ctx, {
+						type: 'bar',
+						data: {
+							labels: ["Form Labels", "Missing alt", "Broken Skip Links", "Linked Imagine missing Alt", "Other"],
+							datasets: [{
+								label: '# of Remaining Errors',
+								data: [3767, 1898, 1329, 1251, 3292],
+								backgroundColor: [
+									'rgba(255, 99, 132, 0.2)',
+									'rgba(54, 162, 235, 0.2)',
+									'rgba(255, 206, 86, 0.2)',
+									'rgba(75, 192, 192, 0.2)',
+									'rgba(153, 102, 255, 0.2)'
+								],
+								borderColor: [
+									'rgba(255,99,132,1)',
+									'rgba(54, 162, 235, 1)',
+									'rgba(255, 206, 86, 1)',
+									'rgba(75, 192, 192, 1)',
+									'rgba(153, 102, 255, 1)',
+								],
+								borderWidth: 2
+							}]
+						},
+						options: {
+							scales: {
+								yAxes: [{
+									ticks: {
+										beginAtZero:true
+									}
+								}]
+							}
+						}
+					});
+				</script>
+				</section>
 			</div>
 		</div>
 
