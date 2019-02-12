@@ -8,7 +8,7 @@ out/
 log/*.log
 tmp/**
 node_modules/
-yarn-lock.json
+yarn.lock
 .sass-cache
 css/reveal.min.css
 js/reveal.min.js
