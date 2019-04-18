@@ -1,231 +1,176 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
-		<title>Web Accessibility Task Force | February 14th, 2019</title>
+    <title>Web Accessibility Task Force | February 14th, 2019</title>
 
-        <!-- Master Stylesheets & Accessibility Helper -->
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/white.css">
-		<link rel="stylesheet" href="plugin/reveal-a11y/accessibility/helper.css">
+    <!-- Master Stylesheets & Accessibility Helper -->
+    <link rel="stylesheet" href="css/reveal.css" />
+    <link rel="stylesheet" href="css/theme/white.css" />
+    <link rel="stylesheet" href="plugin/reveal-a11y/accessibility/helper.css" />
 
-        <!-- Favicon Import -->
-		<link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <!-- Favicon Import -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css" />
 
-		<!-- Chart.JS Imports -->
-		<script src="node_modules/chart.js/dist/Chart.bundle.min.js"></script>
+    <!-- Chart.JS Imports -->
+    <script src="node_modules/chart.js/dist/Chart.bundle.min.js"></script>
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.type = "text/css";
+      link.href = window.location.search.match(/print-pdf/gi)
+        ? "css/print/pdf.css"
+        : "css/print/paper.css";
+      document.getElementsByTagName("head")[0].appendChild(link);
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section aria-label="Introduction">
+          <h1>Web Accessibility Task Force</h1>
+          April 18<sup>th</sup>, 2019
+        </section>
 
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
+        <section aria-label="Agenda">
+          <h2>Agenda</h2>
+          <ol>
+            <li>Cupcakes</li>
+            <li>Progress</li>
+            <li>Focus</li>
+            <li>Moving Forward</li>
+            <li>Textbooks</li>
+            <li>Accessibility Site Preview</li>
+          </ol>
+        </section>
 
-				<section aria-label="Introduction">
-					<h1>Web Accessibility Task Force</h1>
-					February 14<sup>th</sup>, 2019
-				</section>
+        <section>
+          <h2><span style="font-size: 2em;">Progress</span></h2>
+        </section>
 
-				<section aria-label="Agenda">
-					<h2>Agenda</h2>
-					<ol>
-						<li>Progress</li>
-						<li>Procurement</li>
-						<li>Accessibility&nbsp;Resources</li>
-						<li>Formstack</li>
-						<li>JAWS Update</li>
-					</ol>
-				</section>
-
-				<section>
-					<h2><span style="font-size: 2em;">Progress</span></h2>
-				</section>
-
-				<section aria-label="Remediation Projects">
-					<h3>Remediation Projects</h3>
-					<ul>
-						<li>College/District Templates</li>
-						<li>District Directory & Directory Feed</li>
-						<li>Content Fixes of "high error" & "high traffic" pages</li>
-						<li>College Bookstores (<em>ongoing</em>)</li>
-						<li>Human Resources (<em>ongoing</em>)</li>
-						<li>Implementing Landmark Navigation (<em>ongoing</em>)</li>
-					</ul>
-				</section>
-
-				<section aria-label="Error Progress Chart">
-					<h3>Critical Errors Over Time</h3>
-					<canvas data-chart="line">
-						<!-- {
-						 "data": {
-						  "labels": [" October"," November"," December"," January"," February"],
-						  "datasets": [
-						   {
-							"data":[398,2483,6557,7066,7062],
-							"label":"Pages","backgroundColor":"rgba(20,220,220,.8)"
-						   },
-						   {
-							"data":[1035,5196,35132,34886,11537],
-							"label":"Errors","backgroundColor":"rgba(220,120,120,.8)"
-						   }
-						  ]
-						 },
-						 "options": { "responsive": "true" }
-						}
-						-->
-					</canvas>
-					<p class="fragment">A ~67% reduction in overall critical errors</p>
-				</section>
-
-				<section aria-label="Remaining Error Chart">
-					<h3>Remaining Errors</h3>
-					<canvas data-chart="bar">
-						<!-- {
-						 "data": {
-						  "labels": [" Multiple Form Labels", " Alt Text"," Broken Skip Links"," Other"],
-						  "datasets": [
-						   {
-							"data":[0.33,0.27,0.12,0.29],
-							"label":"Errors","backgroundColor":"rgba(220,120,120,.8)"
-						   }
-						  ]
-						 },
-						 "options": { "responsive": "true" }
-						}
-						-->
-					</canvas>
-					<p class="fragment">Note: This does not include contrast errors</strong></p>
-				</section>
-
-				<section aria-label="Problems with Remediation">
-					<h3>The Problem with Remediation</h3>
-					<p class="fragment">We'll look at an example...</p>
-					<p class="fragment">Let's say one PDF file takes 1 hour to remediate</p>
-					<p class="fragment">Next let's say one Web Page takes 30 minutes to remediate</p>
-					<p class="fragment">Lastly, let's say a complicated form takes 2 hours to remediate</p>
-				</section>
-
-				<section aria-label="Remediation Example">
-						<table>
-							<tr class="fragment">
-								<th scope="col">Issue</th>
-								<th scope="col"><span aria-label="time">🕒</span> to Fix</th>
-								<th scope="col"><span aria-label="number">#️⃣</span> Present</th>
-								<th scope="col">Total Time</th>
-							</tr>
-							<tr class="fragment">
-								<th scope="row">PDFs</td>
-								<td>60 mins</td>
-								<td>20,000</td>
-								<td>~2.3 years</td>
-							</tr>
-							<tr class="fragment">
-								<th scope="row">Web Pages</td>
-								<td>30 mins</td>
-								<td>20,000</td>
-								<td>~1.1 years</td>
-							</tr>
-							<tr class="fragment">
-								<th scope="row">Forms</td>
-								<td>120 mins</td>
-								<td>1,000</td>
-								<td>~2.8 months</td>
-							</tr>
-						</table>
-						<p class="fragment">Even with conservative estimates, the total time spent remediating what we have <em>today</em> is <strong>over 3.5 years</strong> <span class="fragment" aria-hidden="true">🤯</span></p>
-                </section>
-
-                <section aria-label="The Solution to Remediation Problems">
-                    <h3>Is there a Solution?</h3>
-                    <p>Accessibility needs to be one of the initial steps in our designs, build processes, and our procurement procedures.</p>
-                </section>
-
-				<section aria-label="Procurement Heading">
-					<h2><span style="font-size: 2em;">Procurement</span></h2>
-				</section>
-
-				<section aria-label="Procurement">
-                    <h3>New Procedures with General Services</h3>
-					<p>All Software Purchases <em>must</em> be accessible</p>
-					<ul>
-					  <li><a href="https://smccd-czqfp.formstack.com/workflows/its_purchasing_request">ITS Purchasing Request</a></li>
-					  <li><a href="https://smccd-czqfp.formstack.com/forms/accessible_it_evaluation">IT Accessibility Checklist</a></li>
-				    </ul>
-                </section>
-
-                <section aria-label="Textbooks">
-                    <h2>Textbook Publishers</h2>
-                    <p>We have been experiencing a lot of issues with publishers claiming "Fully Accessible" but DRC staff working with students have been facing issues.</p>
-                </section>
-
-				<section aria-label="Accessibility Resources">
-					<h2><span style="font-size: 2em;">Accessibility Resources</span></h2>
-                </section>
-
-                <section aria-label="Accessibility Documentation">
-                    <h3>Beginning Our Documentation</h3>
-                    <p>I have created a blog with some mock content.</p>
-                    <p>I used OmniUpdate as examples. What would be most helpful?</p>
-                </section>
-
-				<section aria-label="Formstack Heading">
-					<h2><span style="font-size: 2em;">Formstack</span></h2>
-				</section>
-
-				<section aria-label="Formstack">
-					<h3>Features</h3>
-					<ul>
-						<li class="fragment">Accessible</li>
-						<li class="fragment">FERPA Compliant</li>
-						<li class="fragment">User Friendly</li>
-						<li class="fragment">Salesforce Integration</li>
-					</ul>
-					<p class="fragment"><a href="https://www.formstack.com">Visit Formstack.com</a></p>
-				</section>
-
-				<section aria-label="JAWS Update">
-					<h2><span style="font-size: 2em">JAWS Update</span></h2>
-				</section>
-
-				<section>
-					<h2>Chrome Support</h2>
-					<img src="./JawsChrome.png" alt="">
-					<p>Freedom Scientific and Google Chrome are now compatible.</p>
-				</section>
-
-			</div> <!-- End Slides -->
-		</div> <!-- End Reveal -->
-
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
-
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/chart/chart.min.js '},
-					{ src: 'plugin/chart/csv2chart.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+        <section aria-label="Error Progress Chart">
+          <h3>Critical Errors Over Time</h3>
+          <canvas data-chart="line">
+            <!-- {
+				"data": {
+				"labels": [" October"," November"," December"," January"," February"," March"," April"],
+				"datasets": [
+				{
+				"data":[398,2483,6557,7066,7062,7079,7091],
+				"label":"Pages","backgroundColor":"rgba(20,220,220,.8)"
+				},
+				{
+				"data":[1035,5196,35132,34886,11537,11371,7468],
+				"label":"Errors","backgroundColor":"rgba(220,120,120,.8)"
+				}
 				]
-			});
-		</script>
-	</body>
+				},
+				"options": { "responsive": "true" }
+			}
+			-->
+          </canvas>
+          <p class="fragment">
+            ~36% reduction in overall critical errors. This does not include
+            Contrast Errors
+          </p>
+        </section>
+
+        <section aria-label="Remaining Error Chart">
+          <h3>Remaining Errors</h3>
+          <canvas data-chart="bar">
+            <!-- {
+				"data": {
+				"labels": ["Contast", " Missing Alternative Text", " Linked Image Missing Alt"," Broken Skip Links"," Other"],
+				"datasets": [
+				{
+				"data":[0.89,0.026,0.017,0.0165,0.048],
+				"label":"Errors","backgroundColor":"rgba(220,120,120,.8)"
+				}
+				]
+				},
+				"options": { "responsive": "true" }
+			}
+			-->
+          </canvas>
+        </section>
+
+        <section aria-label="Current Projects">
+          <h2>Current Projects</h2>
+        </section>
+
+        <section aria-label="Narrowing Focus">
+          <h3>Narrowing Focus</h3>
+          <p>
+            What are the key entities that we should begin more in-depth testing
+            on?
+          </p>
+        </section>
+
+        <section>
+          <h4>What are our Priorities?</h4>
+          <ul>
+            <li>Begin In-Depth Manual Testing of Identified Sites</li>
+            <li>Setting Goals at each WATF meeting</li>
+            <li>Sending Reports to Interested Parties on Recurring Basis</li>
+            <li>Conducting further training at each campus</li>
+          </ul>
+        </section>
+
+        <section aria-label="Moving Forward">
+          <h3>Moving Forward</h3>
+          <p>Develop a plan to address each area of focus with deadlines.</p>
+        </section>
+
+        <section aria-label="Textbooks">
+          <h3>Textbooks (cont'd)</h3>
+          <p>
+            How can we best start to solve the problems with textbook
+            publishers?
+          </p>
+        </section>
+
+        <section aria-label="Accessibility Site">
+          <h3>Accessibility Site</h3>
+          <p>Rough Draft of Concept for Feedback and Suggestion</p>
+        </section>
+      </div>
+      <!-- End Slides -->
+    </div>
+    <!-- End Reveal -->
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+        dependencies: [
+          { src: "plugin/markdown/marked.js" },
+          { src: "plugin/markdown/markdown.js" },
+          { src: "plugin/chart/chart.min.js " },
+          { src: "plugin/chart/csv2chart.js" },
+          { src: "plugin/notes/notes.js", async: true },
+          {
+            src: "plugin/highlight/highlight.js",
+            async: true,
+            callback: function() {
+              hljs.initHighlightingOnLoad();
+            }
+          }
+        ]
+      });
+    </script>
+  </body>
 </html>
